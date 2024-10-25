@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Metadata } from 'next'
-import Table from '@/components/Table'
+import Table from '@/components/table'
 import { Suspense } from 'react'
 import { AbsenceType } from '@/lib/types'
 
