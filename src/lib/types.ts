@@ -12,7 +12,7 @@ export type AbsenceType = {
 export interface EmployeeType {
   firstName: string
   lastName: string
-  id: string
+  id: number
 }
 
 export type FilterTypes = 'fullName' | 'absenceType' | 'startDate' | 'endDate'

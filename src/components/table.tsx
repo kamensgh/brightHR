@@ -71,7 +71,7 @@ const Table = ({ data }: { data: AbsenceType[] }) => {
       setAbsences(grouped)
       setLoading(false)
     } catch (error) {
-      console.error('Error fetching data:', error)
+      console.error('Error fetching conflict:', error)
       setLoading(false)
     }
   }, [])
