@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const URL = 'https://front-end-kata.brighthr.workers.dev/api/absences'
 
-const getData = async () => {
+export const getData = async () => {
   const absences = await fetch(URL)
   const data = await absences.json()
   return data

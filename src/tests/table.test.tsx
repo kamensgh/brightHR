@@ -1,6 +1,7 @@
 import '@testing-library/jest-dom'
-import { render, screen } from '@testing-library/react'
-import Table from '../components/Table'
+import { render, screen, fireEvent } from '@testing-library/react'
+import Table from '../components/table'
+
 
 describe('Table Component', () => {
   const mockData = [
@@ -40,4 +41,10 @@ describe('Table Component', () => {
     expect(screen.getByText('Absence Type')).toBeInTheDocument()
   })
 
+  it('displays loading indicator when data is loading', () => {
+    render(<Table data={[]} />)
+
+    expect(screen.getByText('Loading data...')).toBeInTheDocument()
+  })
+   
 })
